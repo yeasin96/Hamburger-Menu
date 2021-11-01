@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{ padding-top:60px ;
+    /* display: none;  */
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    padding-left: 0px;
+    background: #ccc;
+    margin-left: -15px;
+    margin-top: -15px;
+    /* z-index: 0; */
+    
+} 
+.hamburger input[type="checkbox"]:checked ~ .menu{
+    /* display: block; */
+    transform: translateX(0%);
+} 
+.hamburger input[type="checkbox"]{
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    opacity: 0;
+}
+.hamburger{
+    position: relative;
+    /* border: 1px solid red; */
+    width: 40%;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+/* .menu{
+    
+
+} */
+.hamburger-line{
+    width: 40px;
+    height: 32px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* z-index: 1; */
+
+}
+.hamburger-line .line{
+    display: block;
+    height: 6px;
+    width: 100%;
+    background: #232323;
+    border-radius: 10px;
+    z-index: 0;
+    
+
+}
+/* .line2{
+    margin-top: 6px;
+    margin-bottom: 6px;
+} */
+li{
+    list-style-type:none;
+    margin: 1rem;
+    padding: 1rem;
+    /* border-bottom: 1px solid red; */
+}
+ul{
+    border-bottom: 1px solid #ccc;
+}
+li:hover{
+    /* text-decoration: underline;
+    color:coral; */
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
